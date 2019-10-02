@@ -45,7 +45,7 @@ export class HomeworkSideComponent implements OnInit {
     console.log(value.homework);
     console.log(this.studentsData);
     console.log(this.day);
-    console.log(this.day.all);
+    // console.log(this.day.all);
     // this.http
     //   .put(`${this.apiUrl}/students`, {
     //     homework: {
@@ -54,16 +54,16 @@ export class HomeworkSideComponent implements OnInit {
     //     },
     //   })
     //   .subscribe(() => this.getData());
-    this.studentsData.forEach(student => {
-      this.http
-        .patch(`${this.apiUrl}/students/${student.id}`, {
-          homework: {
-            ...student.homework,
-            [this.day.all]: value.homework,
-          },
-        })
-        .subscribe(() => this.getData());
-    });
+    // this.studentsData.forEach(student => {
+    //   this.http
+    //     .patch(`${this.apiUrl}/students/${student.id}`, {
+    //       homework: {
+    //         ...student.homework,
+    //         [this.day.all]: value.homework,
+    //       },
+    //     })
+    //     .subscribe(() => this.getData());
+    // });
   }
 
   // getShowSide() {

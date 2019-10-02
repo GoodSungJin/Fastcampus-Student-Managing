@@ -5,7 +5,7 @@ import { HomeworkComponent } from './homework/homework.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'homework', pathMatch: 'full' },
+  { path: '', redirectTo: 'attendance', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'attendance', component: AttendanceComponent },
   { path: 'homework', component: HomeworkComponent },
@@ -15,4 +15,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
